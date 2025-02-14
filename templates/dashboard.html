@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div style="display: flex; flex-direction: column;
+        padding: 20px; border: 1px solid black;">
+        <h1>This is Dashboard Page</h1>
+        <h3>Username= {{current_user.username}}</h3>
+        <h3>Email = {{current_user.email}}</h3>
+        <h3>Role={{current_user.role}}</h3>
+    </div>
+{% endblock %}
